@@ -40,3 +40,15 @@ class Post(models.Model):
         related_name="posts"
     )
     tags = models.ManyToManyField(Tag)
+
+
+class Comment(models.Model):
+    id = models.AutoField(primary_key=True)
+    user_name = models.CharField(max_length=120)
+    user_email = models.EmailField()
+    text = models.TextField(max_length=400)
+    post = models.ForeignKey(
+        Post,
+        on_delete=models.CASCADE,
+        related_name="comments"
+    )
