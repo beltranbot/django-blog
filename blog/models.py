@@ -41,6 +41,9 @@ class Post(models.Model):
     )
     tags = models.ManyToManyField(Tag)
 
+    def __str__(self) -> str:
+        return f"{self.title}"
+
 
 class Comment(models.Model):
     id = models.AutoField(primary_key=True)
