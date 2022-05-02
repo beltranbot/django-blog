@@ -64,3 +64,8 @@ class SinglePostView(View):
             "blog/post-detail.html",
             context
         )
+
+
+class ReadLaterView(View):
+    def post(self, request):
+        pass
