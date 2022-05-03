@@ -1,12 +1,10 @@
-[packages]
 asgiref==3.5.1
 autopep8==1.6.0
-Django==4.0.4
+Django==3.2.13
 Pillow==9.1.0
+psycopg2-binary==2.9.3
 pycodestyle==2.8.0
-pysqlite3-binary==0.4.7.post3
+pytz==2022.1
 sqlparse==0.4.2
 toml==0.10.2
-
-[requires]
-python_version = "3.7"
+typing_extensions==4.2.0
