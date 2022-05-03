@@ -3,3 +3,5 @@ __pycache__/
 db.sqlite3
 uploads/*
 staticfiles/
+django_my_site
+django_*.zip
